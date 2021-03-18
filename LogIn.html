@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <style>
+        button{
+            color: white;
+            background: red;
+            font-size: 20px;
+            border: rgb(52, 52, 133);
+        }
+        p{
+            color: red;
+            font-size: large;
+        }
+        form{
+            background-color: chartreuse;
+            margin: 5%;
+        }
+        body{
+            background-color: cornflowerblue;
+            padding: 5%;
+           
+        }
+
+        meter::-webkit-meter-bar{background: rgb(179, 176, 176);}
+        meter::-webkit-meter-optimum-value{background: green;}
+        meter::-webkit-meter-suboptimum-value{background: rgb(224, 224, 8);}
+        meter::-webkit-meter-even-less-good-value{background: rgb(241, 3, 3);}
+    </style>
+    <body dir="rtl">
+    <form action="">
+       
+        <br>
+        <p>* يعني حقل اجباري</p>
+        <hr>
+        <table>
+
+            <tr>
+                <td><label for="">ضع اسمك كامل هنا</label><span style="color: red;">*</span></td>
+                <td><input type="text" placeholder="ادخل اسمك هنا" required name="name" value="emad"></td>
+            </tr>
+               <tr>
+                <td><label for="">  اختــــر الجــــــنس</label> <span style="color: red;">* </span> </td>
+                    <td>
+                    <select name="Gender" id="">
+                    <option value="" disabled>  اختر الجنس</option>
+                    <option value="male">   ذكر </option>
+                    <option value="female">انثى </option>
+                </select></td>
+            </tr>
+               <tr>
+                <td><label for=""> اختر الجنس:</label>
+                    
+                <label for="">ذكر</label>
+                <input type="radio" name="gender2" value="ذكر">
+                <label for="">انثي</label> 
+                <input type="radio" name="gender2" value="انثى" ></td>
+               
+               </tr>
+               
+            <tr>
+                <td><label>اختر المرحلة التعليمية</label>
+                 <input type="checkbox" name="firstclass">
+                <label>اساس</label>
+
+                 <input type="checkbox" name="second">
+                <label>ثانوي</label>
+
+                <input type="checkbox" name="university">
+                <label>ثانوي</label>
+
+            </td>
+            </tr>
+
+            <tr>
+             <td> اختار تاريخ ميلادك<span style="color: red;">*</span></td>
+             <td> <input type="date" name="date" value="1999-01-01"></td>
+            </tr>
+
+            <tr>
+                <td>ادخل كلمـــة مرور<span style="color: red;">*</span></td> 
+                <td><input type="password" name="password"></td>
+            </tr>
+
+            <tr>
+                <td> ادخل ايميلك<span style="color: red;">*</span> </td>
+                <td><input type="email" name="MyMail"></td>
+            </tr>
+
+        </table>
+        <button  id="log" type="submit" style="position:">تسجيل دخول     </button>
+
+        <!-- <button type="button" onclick="document.getElementById('file').click()" style="color: white;background: black;">رفع ملف</button>
+        <input id="file" type="file" name="file" style="display: none;"> -->
+        <input id="file" type="file" name="file" style="">
+        اللون:<input type="color" name="color"> 
+         الرابط :<input type="url" name="url" > 
+          حد معين :<input type="range" name="range" value="">
+         الرقم : <input type="number" name="number">
+         مساحة ادخال : <textarea rows="10" cols="50" name="textArea"></textarea>
+         <table>
+             <tr>
+                 
+                 <td>الطالب 1 : عماد</td>
+                 <td><meter value="70" min="0" max="100"  low="50" high="60" optimum="90" ></meter></td>
+             </tr>
+
+             <tr>
+                <td>الطالب 2: سامر</td>
+                <td><meter value="50" min="0" max="100"  low="50" high="60" optimum="90"></meter></td>
+             </tr>
+
+             <tr>
+                <td>الطالب رقم 3: معاذ</td>
+                <td><meter value="40" min="0" max="100"  low="50" high="60" optimum="90"></meter></td>
+             </tr>
+             
+         </table>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1813.9991584929012!2d46.59250292130865!3d24.58925429856032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDM1JzIxLjMiTiA0NsKwMzUnMjkuMyJF!5e0!3m2!1sar!2ssa!4v1613981845627!5m2!1sar!2ssa" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>">
+
+    </form>
+    </body>
+</html>
